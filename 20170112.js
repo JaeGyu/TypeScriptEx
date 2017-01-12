@@ -8,3 +8,7 @@ var Color;
 var c = Color.Green;
 console.log(c);
 console.log(Color);
+var notSure = 4;
+console.log(notSure);
+notSure = "hhh";
+console.log(notSure);
