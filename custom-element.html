@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8"/>
+<script>
+
+var proto = Object.create(HTMLElement.prototype);
+proto.createdCallback = function{
+    var shadow = this.createShadowRoot();
+    var button = document.createElement("button");
+    button.className = "btn";
+    button.innerHTML = "Hello 버튼";
+    button.style.fontStyle = "20px";
+    shadow.appendChild(button);
+    button.addEventListener("click", function(){
+        alert("클릭했습니다.!");
+    });
+};
+
+documemt.registerElement("hello-button",{
+    prototype: proto
+});
+
+</script>
+</head>
+<body>
+    <hello-button></hello-button>    
+</body>
+</html>
