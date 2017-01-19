@@ -18,7 +18,7 @@ console.log(typeof cosy);
 var fun = new Function();
 
 console.log(fun);
-console.log(typeof  fun);
+console.log(typeof fun);
 console.log(fun.constructor);
 
 
