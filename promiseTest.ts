@@ -1,3 +1,3 @@
-/**
- * Created by jaegyuhan on 2017. 1. 20..
- */
+var promise = new Promise((resolve,reject) => {
+    console.log("f");
+});
